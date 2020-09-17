@@ -1,41 +1,72 @@
-body {
-    background: white; /* try type yellow */
-    color: #323232;
-  
-    margin: 0;
-    height: 100vh;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    font-family: Helvetica neue, roboto;
-  }
-  #container {
-    display: inline-grid;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-columns: repeat(3, 200px);
-    border: 2px solid;
-  }
-  .grid-cell{
-    display: flex;
-    color: rgb(12, 12, 12);
-    border: 2px solid black;
-    cursor: pointer;
-    text-align: center;
-  }
-  .cell{
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    color: red;
-  }
-  .cell2{
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-    color: blue;
-  }
-  .color{
-    background-color: red;
-  }
+#grid-parent {
+  background: white; /* try type yellow */
+  color: #323232;
+
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Helvetica neue, roboto;
+}
+#container {
+  display: inline-grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 200px);
+  border: 2px solid;
+}
+.grid-cell {
+  display: flex;
+  color: rgb(12, 12, 12);
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+.cell {
+  background-color: red;
+  width: 196px;
+  height: 196px;
+}
+.cell2 {
+  background-color: blue;
+  width: 196px;
+  height: 196px;
+}
+.color {
+  background-color: red;
+}
+h1 {
+  color: purple;
+  display: block;
+  justify-content: center;
+  top: 0px;
+  text-align: center;
+  font-size: 50px;
+  border: 5px solid purple;
+  font-family: "Courier New", Courier, monospace;
+}
+#red {
+  float: left;
+  font-size: 40px;
+  padding: 50px;
+  margin: 20px;
+  border: 5px solid red;
+}
+#blue {
+  float: right;
+  font-size: 40px;
+  padding: 50px;
+  margin: 20px;
+  border: 5px solid blue;
+}
+#ties {
+  display: absolute;
+  padding: 50px;
+  width: 75px;
+  margin: auto;
+  border: 5px solid rgb(22, 22, 22);
+  text-align: center;
+  font-size: 30px;
+}
