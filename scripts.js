@@ -9,7 +9,7 @@ let players = () => {
   let incrementTurns = () => {
     play.turns++;
     if (play.turns === 9) {
-      play.turns = 0;
+      play.turns = 1;
     }
   };
   let incrementRed = () => {
